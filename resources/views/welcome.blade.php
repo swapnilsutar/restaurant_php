@@ -9,7 +9,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
         <style>
             html, body {
                 background-color: #fff;
@@ -64,9 +66,9 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="container">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -80,9 +82,11 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title">
                     Welcome to our Restaurant 
                 </div>
+
+                <h1>swapnil</h1>
 
                 <div class="links">
                    
