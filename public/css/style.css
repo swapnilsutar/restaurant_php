@@ -1,3 +1,62 @@
-h1{
-    color:green;    
+
+.navbar {   
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.137);
+    width: 100%;   
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+.nav-link{
+    color: white;
+    text-transform:uppercase ;
+}
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.548);
+    /* background-color: rgb(162, 223, 152); */
+    border-radius: 50%;
+    border-color:white ;
+    transition: .5s;
+    /* text-decoration: none; */
+}
+
+.bg_content{
+    height:100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.582)),url(../images/best-indian-food.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c_title{
+
+   color: white;
+    font-size: 70px;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 25%;
+    text-align: center;
+
+    text-transform: capitalize;
+}
+.reservation{
+    height: 100vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.507),#1212128c); */
+}
+.contact{
+    height: 50vh;
+    background-color: rgb(25, 0, 39);
+    margin-top: 30px ;
+    padding-bottom: 30px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 255, 85);
 }
