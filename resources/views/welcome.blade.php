@@ -108,8 +108,8 @@
 
             <div class="reservation">
 
-            <div class="offer_title">
-                        offers & events &#169; Indian Food Restaurant
+                <div class="offer_title">
+                            offers & events &#169; Indian Food Restaurant
                 </div>
 
 
