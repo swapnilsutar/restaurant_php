@@ -17,11 +17,14 @@
             @if (Route::has('login'))
                 @auth                      
                     @else
-            <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Indian Food Restaurant </a>
+        
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="#">Indian Food Restaurant </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">exp</span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         </ul>
@@ -44,28 +47,77 @@
                     </span>
                 </div>
             </nav>
-         
                         @endif
                     @endauth  
             @endif                     
-
-
+  
+            <!-- carousal -->
             <div class="content">
 
                 <div class="bg_content">
-
+                    
                     <div class="c_title">
                         Welcome to Indian Food Restaurant
                     </div>
                 </div>
+
+            </div>
+
+
+            <div class="menu">
+            
+                <div class="menu_title">
+                        menus
+                </div>
+                 <div class="menu_title1">
+                        <a href=""> View all menus </a>
+                </div>
+
+
+                <div class="coninter row">
+                    <div class="col-lg-4 menu_img">
+
+                        <img src="/images/pizza.jpg" alt="first">
+                            <div class="overlay">
+                                    <div class="ovrlay_text">
+                                        PIZZA
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 menu_img">
+                        <img src="/images/samosa.jpg" alt="second">
+                         <div class="overlay">
+                                    <div class="ovrlay_text">
+                                        Samosa
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 menu_img">
+                        <img src="/images/pizza.jpg" alt="third">
+                         <div class="overlay">
+                                    <div class="ovrlay_text">
+                                        PIZZA
+                                    </div>
+                            </div>
+                    </div>
+                
+                </div>    
+
+            
             </div>
 
             <div class="reservation">
 
+            <div class="offer_title">
+                        offers & events &#169; Indian Food Restaurant
+                </div>
+
+
             </div>
 
             <div class="contact">
-
+                   
+                &#169; Designed By Swapnil Sutar
 
             </div>
 

@@ -1,8 +1,11 @@
-
+::selection{
+    color: black;
+    background-color: rgba(163, 199, 91, 0.548);
+}
 .navbar {   
     position: absolute;
     background-color: rgba(0, 0, 0, 0.137);
-    width: 100%;   
+    width: 100%;  
 }
 .navbar-brand{
     color: white;
@@ -15,7 +18,9 @@
 }
 .nav-link{
     color: white;
-    text-transform:uppercase ;
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 13px;
 }
 .nav-link:hover{
     color: rgba(255, 255, 255, 0.548);
@@ -23,37 +28,129 @@
     border-radius: 50%;
     border-color:white ;
     transition: .5s;
-    /* text-decoration: none; */
 }
 
 .bg_content{
-    height:100vh;
-    background:  linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.582)),url(../images/best-indian-food.jpg);
-    /* background-attachment: fixed; */
+    height:92vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.308)),url(../images/best-indian-food.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .c_title{
-
-   color: white;
-    font-size: 70px;
+    color: white;
+    font-size: 85px;
     font-weight: 700;
     width: 100%;
-    padding-top: 25%;
+    padding-top: 20%; 
     text-align: center;
-
     text-transform: capitalize;
+    /* text-decoration: underline ; */
+    letter-spacing: 5px;
+    animation: c_tit 2s linear  ;
 }
+@keyframes c_tit{
+    from{
+        color: white;
+        letter-spacing: 15px;
+        opacity: 0;
+        
+    }
+    to{
+        
+        letter-spacing: 5px;
+        color:white;
+        opacity: 1;
+    }
+}
+
 .reservation{
     height: 100vh;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.507),#1212128c); */
+    background-color: rgb(255 ,255 ,135);
 }
+
+.menu{
+    height: 100vh;
+    background-color: rgb(227, 255, 250);    
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 8px;
+    font-weight: 300;
+}
+.menu_title1 a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    text-align:right;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 100;
+    float: right;
+    color: gray;
+    letter-spacing: 5px;
+}
+.menu_img{
+    /* border:1px solid red; */
+    height: 300px;
+    /* padding: 10px; */
+    overflow: hidden;
+}
+.menu_img img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    /* transform-origin:  65% 75%; */
+    transition: transform .5s;
+
+}
+.menu_img:hover img{
+    transform:scale(1.2);
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .25s ease;
+}
+.menu_img:hover .overlay{
+    width: 100%;
+}
+.ovrlay_text{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
 .contact{
     height: 50vh;
     background-color: rgb(25, 0, 39);
-    margin-top: 30px ;
     padding-bottom: 30px;
+    padding-top:30px;
 }
+
 ::-webkit-scrollbar{
     width: 10px;
 }
