@@ -74,7 +74,7 @@
                 </div>
 
 
-                <div class="coninter row">
+                <div class="row">
                     <div class="col-lg-4 menu_img">
 
                         <img src="/images/pizza.jpg" alt="first">
@@ -93,10 +93,10 @@
                             </div>
                     </div>
                     <div class="col-lg-4 menu_img">
-                        <img src="/images/pizza.jpg" alt="third">
+                        <img src="/images/gourmet-burger-scaled.jpg" alt="third">
                          <div class="overlay">
                                     <div class="ovrlay_text">
-                                        PIZZA
+                                        burger
                                     </div>
                             </div>
                     </div>
@@ -106,12 +106,53 @@
             
             </div>
 
+            <div class="insta_follow">
+                <div class="insta_text">
+                    follow us on instagram
+                </div>
+                <center>
+
+                    <button class='follow_me_btn'>
+                        click here
+                    </button>
+                </center>
+            </div>
+
             <div class="reservation">
 
                 <div class="offer_title">
-                            offers & events &#169; Indian Food Restaurant
+                            offers & events @ Indian Food Restaurant
                 </div>
 
+        
+                <div class="row">
+                    <div class="col-lg-4 offer_img">
+
+                        <img src="/images/1543904720.jpg" alt="first">
+                            <div class="overlay1">
+                                    <div class="ovrlay_text1">
+                                        birthday party night
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 offer_img">
+                        <img src="/images/Select-Restaurants-In-India-Offer-Up-To-50-Discount.jpg" alt="second">
+                         <div class="overlay1">
+                                    <div class="ovrlay_text1">
+                                        family time
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 offer_img">
+                        <img src="/images/candle-light-dinner.jpg" alt="third">
+                         <div class="overlay1">
+                                    <div class="ovrlay_text1">
+                                        special evening
+                                    </div>
+                            </div>
+                    </div>
+                
+                </div>    
 
             </div>
 

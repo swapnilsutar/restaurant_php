@@ -31,7 +31,7 @@
 }
 
 .bg_content{
-    height:92vh;
+    height:100vh;
     background:  linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.308)),url(../images/best-indian-food.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 }
 .c_title{
     color: white;
-    font-size: 85px;
+    font-size: 300%;
     font-weight: 700;
     width: 100%;
     padding-top: 20%; 
@@ -62,11 +62,6 @@
         color:white;
         opacity: 1;
     }
-}
-
-.reservation{
-    height: 100vh;
-    background-color: rgb(255 ,255 ,135);
 }
 
 .menu{
@@ -102,8 +97,8 @@
 }
 .menu_img{
     /* border:1px solid red; */
-    height: 300px;
-    /* padding: 10px; */
+    height: 333px;
+    padding: 10px;
     overflow: hidden;
 }
 .menu_img img{
@@ -136,6 +131,7 @@
     font-size: 20px;
     font-weight: 700;
     position:absolute ;
+    text-transform: uppercase;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -143,6 +139,58 @@
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
+
+.insta_follow{
+    height: auto;
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.363)),url("/images/photo-1490818387583-1baba5e638af.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.insta_text{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px; 
+    letter-spacing: 12px;
+    font-weight: 300;
+    color: white;
+}
+.follow_me_btn{
+    /* left: 40%; */
+    /* position: absolute; */
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: .5s;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+.follow_me_btn:hover{
+    background-color: white;
+    color: black;
+}
+.reservation{
+
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.014),rgba(0, 0, 0, 0)),url("/images/photo--1baba5e638af.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
 .offer_title{
     width: 100%;
     font-size: 20px;
@@ -150,9 +198,51 @@
     text-transform: uppercase;
     padding: 20px;
     padding-top: 70px;
+    padding-bottom: 70px;
     letter-spacing: 8px;
     font-weight: 300;
 
+}
+.offer_img{
+    height: 333px;
+    padding:5px;
+    overflow:hidden;
+}
+.offer_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* padding:15px;  */
+    transition: transform .5s;
+}
+.offer_img:hover img{
+    transform: scale(1.2);
+}
+.overlay1{
+    position: absolute;
+    bottom:0;
+    top: 0;  
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .25s;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.offer_img:hover .overlay1{
+    height: 100%;
+ 
+}
+.ovrlay_text1{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
 }
 
 .contact{
