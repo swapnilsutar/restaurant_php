@@ -19,7 +19,7 @@
                     @else
         
             <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="#">Indian Food Restaurant </a>
+                <a class="navbar-brand" href="/">Indian Food Restaurant </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">exp</span>
@@ -29,12 +29,13 @@
                     <ul class="navbar-nav mr-auto">
                         </ul>
                         
-                        <a class="nav-link" href="{{ url('/home') }}">Home </a>
-                        <a class="nav-link" href="#">Reservation</a>
+                        <!-- <a class="nav-link" href="{{ url('/home') }}">Home </a> -->
+                        <a class="nav-link" href="/">Home </a>
+                        <a class="nav-link" href="/reservation">Reservation</a>
                         
-                        <a class="nav-link" href="#">menu</a>
+                        <a class="nav-link" href="/menu">menu</a>
                         
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="/contact">Contact</a>
                         
                     <span class="navbar-text">
                         
@@ -73,6 +74,7 @@
                         <a href=""> View all menus </a>
                 </div>
 
+            <div class="container-fluid">
 
                 <div class="row">
                     <div class="col-lg-4 menu_img">
@@ -90,18 +92,19 @@
                                     <div class="ovrlay_text">
                                         Samosa
                                     </div>
+                                </div>
                             </div>
-                    </div>
-                    <div class="col-lg-4 menu_img">
-                        <img src="/images/gourmet-burger-scaled.jpg" alt="third">
-                         <div class="overlay">
+                            <div class="col-lg-4 menu_img">
+                                <img src="/images/gourmet-burger-scaled.jpg" alt="third">
+                                <div class="overlay">
                                     <div class="ovrlay_text">
                                         burger
                                     </div>
+                                </div>
                             </div>
-                    </div>
-                
-                </div>    
+                            
+                        </div>    
+                </div>
 
             
             </div>
@@ -124,7 +127,9 @@
                             offers & events @ Indian Food Restaurant
                 </div>
 
-        
+            <div class="container-fluid">
+
+            
                 <div class="row">
                     <div class="col-lg-4 offer_img">
 
@@ -155,10 +160,14 @@
                 </div>    
 
             </div>
-
+            </div>
             <div class="contact">
                    
-                &#169; Designed By Swapnil Sutar
+            <footer>
+                2020 &#169; All Rights Reserved
+                                <br>
+                Made by Swapnil Sutar
+            </footer>
 
             </div>
 
