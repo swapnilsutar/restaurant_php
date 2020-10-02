@@ -16,8 +16,9 @@
 
 .navbar {   
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.137);
-    width: 100%;  
+    background-color: rgba(0, 0, 0, 0.596); 
+    width: 98%;  
+    z-index: 11111;
 }
 .navbar-brand{
     color: white;
@@ -37,12 +38,13 @@
 .nav-link:hover{
     color: rgba(255, 255, 255, 0.548);
     /* background-color: rgb(162, 223, 152); */
-    border-radius: 50%;
+   border-radius: 50%;
     border-color:white ;
     transition: .5s;
 }
 
 .bg_content{
+    /* position: absolute; */
     height:100vh;
     background:  linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.308)),url(../images/best-indian-food.jpg);
     background-attachment: fixed;
@@ -269,6 +271,9 @@ footer{
     color: white;
     font-style: italic;
     position: absolute;
-    /* bottom: 0; */
-    
+    /* bottom: 0; */   
+}
+
+.py-4{
+    position: relative;
 }

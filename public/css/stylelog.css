@@ -1,0 +1,12 @@
+body{
+    background:linear-gradient(to bottom right, orange 35% ,white 53% ,green 75%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card{
+    background-color: rgba(182, 182, 182, 0.411);
+}
+.card-header{
+    background-color: rgba(255, 209, 134, 0.52);
+}

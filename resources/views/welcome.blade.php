@@ -13,22 +13,23 @@
         
     </head>
     <body>
-        <div class="">
-            @if (Route::has('login'))
-                @auth                      
-                    @else
         
+
+        
+        <div class="container-fluid">
+      
+        <!-- navbar dynamic -->
             <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="/">Indian Food Restaurant </a>
+                <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Indian Food Restaurant') }} </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">exp</span>
+                    <span class="navbar-toggler-icon">|||</span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        </ul>
+                <ul class="navbar-nav mr-auto">
                         
+                        </ul>
                         <!-- <a class="nav-link" href="{{ url('/home') }}">Home </a> -->
                         <a class="nav-link" href="/">Home </a>
                         <a class="nav-link" href="/reservation">Reservation</a>
@@ -38,21 +39,46 @@
                         <a class="nav-link" href="/contact">Contact</a>
                         
                     <span class="navbar-text">
-                        
+                    @guest
+
+                    @if (Route::has('login'))
+                       @auth                      
+                    @else
                     <a href="{{ route('login') }}" class="nav-link">Login</a>
                     </span>                
-                    @if (Route::has('register'))
-                    <span class="navbar-text">
-                    <a href="{{ route('register') }}" class="nav-link">Register</a>
-        
-                    </span>
-                </div>
-            </nav>
+                        @if (Route::has('register'))
+                        <span class="navbar-text">
+                        <a href="{{ route('register') }}" class="nav-link">Register</a>      
+                        </span>
                         @endif
                     @endauth  
-            @endif                     
-  
-            <!-- carousal -->
+                    @endif    
+
+                   @else
+                            <li class="nav-link dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest          
+                </div>
+            </nav>
+
+        </div>
+        
             <div class="content">
 
                 <div class="bg_content">
@@ -171,7 +197,7 @@
 
             </div>
 
-        </div>
+ 
         
         
 
