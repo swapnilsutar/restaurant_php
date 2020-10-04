@@ -8,21 +8,15 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/stylelog.css" rel="stylesheet">
-    
-
 </head>
 <body>
     
@@ -30,7 +24,6 @@
 
 
     <div class="container-fluid">
-
 
         <!-- navbar dynamic -->
         <nav class="navbar navbar-expand-lg ">
@@ -41,14 +34,13 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    
-                    </ul>
+                <ul class="navbar-nav mr-auto"></ul>
+
                     <!-- <a class="nav-link" href="{{ url('/home') }}">Home </a> -->
                     <a class="nav-link" href="/">Home </a>
-                    <a class="nav-link" href="/reservation">Reservation</a>
                     
                     <a class="nav-link" href="/menu">menu</a>
+                    <a class="nav-link" href="/reservation">Reservation</a>
                     
                     <a class="nav-link" href="/contact">Contact</a>
                     
@@ -76,7 +68,7 @@
                         
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             
-                        <a href="profile" class="dropdown-item"> {{ __('Profile') }} </a>
+                        <a href="{{ route('profile') }}" class="dropdown-item"> {{ __('Profile') }} </a>
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
@@ -88,21 +80,33 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
+                    </li>
                             @endguest          
                         </div>
             </nav>
             
-            
+
+
+     
         </div>
+    
 
 
-        
-            <br><br><br><br>
             <main class="py-4">
                 @yield('content')
             </main>
-        </div>
+    </div>
         
+
+        <div class="contact">
+              
+              <footer>
+                  2020 &#169; All Rights Reserved
+                <br>
+                  Made by Swapnil Sutar
+              </footer>
+  
+        </div>
+  
     </body>
 </html>

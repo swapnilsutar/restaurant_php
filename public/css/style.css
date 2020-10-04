@@ -166,7 +166,7 @@
 }
 .insta_text{
     width: 100%;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 30px; 
@@ -260,17 +260,20 @@
 }
 
 .contact{
-    height: 50vh;
+    height: auto;
     background-color: rgb(25, 0, 39);
     padding-bottom: 30px;
     padding-top:30px;
+    /* position: fixed; */
+    bottom:0;
+    width:100%;
 }
 footer{
     width: 100%;
     text-align: center;
     color: white;
     font-style: italic;
-    position: absolute;
+ 
     /* bottom: 0; */   
 }
 

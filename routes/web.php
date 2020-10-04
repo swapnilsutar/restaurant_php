@@ -19,3 +19,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'HomeController@index1')->name('profile');
+
+// Route::view('/menu','menu');
+Route::view('/contact','contact');
+Route::view('/reservation','reservation');
+
+Route::get('/menu','menuController@index');
+

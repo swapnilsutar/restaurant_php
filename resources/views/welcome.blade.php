@@ -32,9 +32,9 @@
                         </ul>
                         <!-- <a class="nav-link" href="{{ url('/home') }}">Home </a> -->
                         <a class="nav-link" href="/">Home </a>
+                        <a class="nav-link" href="/menu">menu</a>
                         <a class="nav-link" href="/reservation">Reservation</a>
                         
-                        <a class="nav-link" href="/menu">menu</a>
                         
                         <a class="nav-link" href="/contact">Contact</a>
                         
@@ -61,6 +61,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+    
+                                 <a href="{{ route('profile') }}" class="dropdown-item"> {{ __('Profile') }} </a>
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -77,6 +79,7 @@
                 </div>
             </nav>
 
+
         </div>
         
             <div class="content">
@@ -84,6 +87,7 @@
                 <div class="bg_content">
                     
                     <div class="c_title">
+                    
                         Welcome to Indian Food Restaurant
                     </div>
                 </div>
@@ -97,9 +101,11 @@
                         menus
                 </div>
                  <div class="menu_title1">
-                        <a href=""> View all menus </a>
+                        <a href="menu"> View all menus </a>
                 </div>
 
+  
+  
             <div class="container-fluid">
 
                 <div class="row">
@@ -186,9 +192,10 @@
                 </div>    
 
             </div>
-            </div>
-            <div class="contact">
-                   
+        </div>
+  
+        <div class="contact">
+              
             <footer>
                 2020 &#169; All Rights Reserved
                                 <br>

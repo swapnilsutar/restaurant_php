@@ -7,6 +7,58 @@ body{
 .card{
     background-color: rgba(182, 182, 182, 0.411);
 }
+.py-4 {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
 .card-header{
-    background-color: rgba(255, 209, 134, 0.52);
+    background-color: rgba(255, 209, 134, 0.363);
+}
+.menumode tr,th,td{
+    padding: 20px;
+    display: none;
+}
+.menus{
+    
+        height: auto;
+        /* background-color: rgb(255 ,255 ,135); */
+        background: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url("/images/hd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    
+}
+.startermenu{
+    height: auto;
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.40),rgba(0, 0, 0, 0.40)),url("/images/Masala-Papad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+.mainmenu_back{
+    height: auto;
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.281)),url("/images/CLBM-VJPT-FOOD-2174.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+}
+.dessert{
+    height: auto;
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url("/images/eTFRIu4kQ8GD4fqPgtpy_chefs-recipes-Windjammer-Landing-Pineapple-Carpaccio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
 }
