@@ -1,45 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- 
-    <table class='menumode' border='1'>
-    
-    <tr>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Offer</th>
-        <th>Total Rate</th>
-        <th>Categories</th>
-    
-    </tr>
-    @foreach($foodData ?? '' as $food)
 
-        <tr>
-
-               <td>
-               {{ $food->dish_name }}
-                </td>
-        
-        <td>
-        {{ $food->price }}
-        </td>
-        <td>
-        {{ $food->offer }}
-        
-        </td>
-        <td>
-        {{ $food->total_rate }}
-        
-        </td>
-        <td>
-        {{ $food->categories }}
-        
-        </td>
-        </tr>
-               
-    @endforeach
-
-    </table> -->
 
     <div class="menus">
                 <div class="insta_text">
@@ -54,7 +16,7 @@
                 </div>
                 <center>
 
-                <a href="stater">
+                <a href="/food_menu">
                     <button class='follow_me_btn'>
                         click here
                     </button>
@@ -69,7 +31,7 @@
                 </div>
                 <center>
 
-                <a href="/maincource">
+                <a href="/food_menu">
                     <button class='follow_me_btn'>
                         click here
                     </button>
@@ -82,7 +44,7 @@
                    dessert
                 </div>
                 <center>
-                <a href="dessert">
+                <a href="/food_menu">
                     <button class='follow_me_btn'>
                         click here
                     </button>

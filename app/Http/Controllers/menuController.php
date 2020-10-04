@@ -13,7 +13,7 @@ class menuController extends Controller
 
         $foodData = foodmenu::getmenuData();
 
-        return view('menu')-> with("foodData",$foodData);
+        return view('food_menu')-> with("foodData",$foodData);
     
     }
 
