@@ -57,9 +57,11 @@
                     </div>
                     
                     <div class="col-lg-4">
-                        <div class="con_tit">
+                    <center>
+                        <div class="con_tit"> 
                                     contact us
                             </div> 
+                    </center>
 
                             <form action="mailto:swapnilsutar@gmail.com" method="post" enctype="text/plain">
 
