@@ -44,7 +44,8 @@
                          special events & parties
                     </div>
                     <div class="rt_t">
-                    Catering and Events are opportunities for us to work more closely with our guests, occasions for us to share our dedication to celebration in exciting new ways.
+                    Catering and Events are opportunities for us to work more closely with our guests,
+                    occasions for us to share our dedication to celebration in exciting new ways.
                     </div>
                </div>
                
