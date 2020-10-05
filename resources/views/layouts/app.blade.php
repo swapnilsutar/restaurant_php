@@ -103,7 +103,9 @@
               <footer>
                   2020 &#169; All Rights Reserved
                 <br>
-                  Made by Swapnil Sutar
+                  Made by <a href="https://www.linkedin.com/in/swapnilsutar/" target="blank">
+                   Swapnil Sutar
+                  </a>
               </footer>
   
         </div>

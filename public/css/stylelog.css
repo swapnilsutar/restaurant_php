@@ -20,7 +20,6 @@ body{
 }
 .menumode tr:hover{
     background-color: rgba(236, 236, 236, 0.377);
-    
 }
 .menus{
     
@@ -33,6 +32,43 @@ body{
         padding-top: 300px;
         padding-bottom: 300px;
     
+}
+.reserve{
+    height: auto;
+    /* background-color: rgb(255 ,255 ,135); */
+    background: linear-gradient(rgba(0, 0, 0, 0.445),rgba(0, 0, 0, 0.432)),url("/images/reserved.png  ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+.reservtext{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px; 
+    color: white;
+    font-size: 25px;
+    
+}
+.reserv_title{
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+.reserve_btn{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-transform: uppercase;
+    font-size:16px ;
+    padding:10px ;
+}
+.main_reserve{
+    background-color: rgb(135, 214, 175);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .startermenu{
     height: auto;
@@ -54,6 +90,11 @@ body{
     padding-top: 300px;
     padding-bottom: 300px;
 
+}
+.logs{
+    /* height: 100vh; */
+    padding-top: 150px;
+    padding-bottom: 200px;
 }
 .dessert{
     height: auto;
