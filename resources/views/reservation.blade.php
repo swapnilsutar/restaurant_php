@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="rt_t">
-                         Seats up to 80
+                         Seats upto 80
                     </div>
 
                </div>
@@ -71,7 +71,7 @@
                          the small room
                     </div>
                     <div class="rt_t">
-                    Seats up to 25
+                    Seats upto to 25
                     </div>
                </div>
                
@@ -79,8 +79,5 @@
 
           </div>
      </div>
-
-
-
 
 @endsection
