@@ -156,3 +156,16 @@ body{
     padding-bottom: 300px;
 
 }
+
+.profile_me{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.p_name{
+    font-weight: 700;
+    font-size: 18px;
+}
+.p_ans{
+    font-weight: 500;
+    font-size: 19px;
+}

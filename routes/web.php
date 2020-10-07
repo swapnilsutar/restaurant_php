@@ -26,3 +26,5 @@ Route::view('/reservation','reservation');
 
 Route::get('/food_menu','menuController@index');
 
+// Route::get('/profile','profileController@index');
+

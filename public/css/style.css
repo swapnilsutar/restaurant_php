@@ -19,10 +19,13 @@ a{
     text-decoration: none;  
     color: white;
 }
+.container-fluid{
+    padding:0px!important;
+}
 .navbar {   
     position: absolute;
     background-color: rgba(0, 0, 0, 0.596); 
-    width: 94%;  
+    width: 100%;  
     z-index: 11111;
 }
 .navbar-brand{
@@ -266,7 +269,7 @@ a{
 }
 
 .contact_sub{
-    height: 30vh;
+    height: auto;
     background-color: rgb(100, 62, 10);
     padding-top: 30px;
     padding-bottom: 30px;
