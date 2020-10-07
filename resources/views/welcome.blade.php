@@ -196,15 +196,97 @@
   
         <div class="contact">
               
-            <footer>
-                2020 &#169; All Rights Reserved
+            <div class="contact_sub">
+            
+                <div class="container">
+
+                    <div class="row">
+
+                            <div class="col-md-4 bottom_nav">
+                                
+                                <ul>
+                                    <a href="/">
+                                        <li>
+                                            Home
+                                        </li>
+                                    </a>
+                                    <a href="menu">
+                                        <li>
+                                            Menu
+                                        </li>
+                                    </a>
+                                    <a href="reservation">
+                                        <li>
+                                            Reservation
+                                        </li>
+                                    </a>
+                                    <a href="contact">
+                                        <li>
+                                           Contact
+                                        </li>
+                                    </a>
+                                </ul>
+                            
+                            </div>
+
+                            <div class="col-md-4 ">
+                                    <p class="about_add_t">
+                                        Address
+                                    </p>
+                                    <p class="about_add_c">
+                                        Swapnil nagar 1st Block 1st Cross, <br> Rammurthy nagar, Kolhapur
+                                    </p>
+
+                                    <p class="about_add_t">
+                                        Phone
+                                    </p>
+                                    <p class="about_add_c">
+                                    +91 000000000                                        
+                                    </p>
+              
+                            </div>
+
+                            <div class="col-md-4">
+                                CONNECT US
                                 <br>
-                Made by <a href="https://www.linkedin.com/in/swapnilsutar/" target="blank">
+                                <br>
+                                
+                                <a href="">
+                                <img src="images/linkedin (1).png" alt="" class="icon_s">
+                                </a> &nbsp;
+                                <a href="">
+                                <img src="images/google-plus.png" alt="" class="icon_s">
+                                </a>&nbsp;
+                                <a href="">
+                                <img src="images/facebook (1).png" alt="" class="icon_s">
+                                </a>&nbsp;
+                                <a href="">
+                                <img src="images/instagram (1).png" alt="" class="icon_s">
+                                </a>
+
+                            </div>
+
+
+
+                    </div>
+
+                </div>
+            
+            
+            </div>
+            <!-- END contact_sub -->
+
+            <footer>
+             Copyright &#169; 2020
+                                <br>
+                Made by 
+                <a href="https://www.linkedin.com/in/swapnilsutar/" target="blank">
                    Swapnil Sutar 
-                  </a>
+                </a>
             </footer>
 
-            </div>
+            
+        </div>
 
  
         

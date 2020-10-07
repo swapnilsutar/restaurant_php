@@ -16,7 +16,8 @@
     /* background-color: rgba(255, 60, 60, 0.787); */
 }
 a{
-    text-decoration: none;
+    text-decoration: none;  
+    color: white;
 }
 .navbar {   
     position: absolute;
@@ -264,24 +265,52 @@ a{
     white-space: nowrap;
 }
 
-.contact{
-    height: auto;
-    background-color: rgb(49, 4, 4);
+.contact_sub{
+    height: 30vh;
+    background-color: rgb(100, 62, 10);
+    padding-top: 30px;
     padding-bottom: 30px;
-    padding-top:30px;
-    /* position: fixed; */
-    bottom:0;
-    width:100%;
+    color: white;
 }
 footer{
+    height: auto;
+    background-color: rgb(139, 85, 13);
+    padding-bottom: 10px;
+    padding-top:10px;
+    bottom:0;
     width: 100%;
     text-align: center;
     color: white;
-    font-style: italic;
- 
-    /* bottom: 0; */   
 }
+footer a{
+    font-style: italic;
+}
+.bottom_nav ul a li{
+    list-style: none;
+    padding:9px ;
+    
+}
+.bottom_nav ul li:hover {
+    background-color: rgba(131, 85, 0, 0.432);
+    color: orange;
+    text-decoration: none;  
+}
+.about_add_t{
+    font-weight: 700;
+}
+.about_add_c{
+    font-weight:300 ;
+    color: rgb(175, 175, 175);
+}
+.icon_s{
+	height: 29px;
+	width: 29px;
 
+}
+.icon_s:hover{
+	transition:1.5s;
+	transform:rotate(360deg);
+}
 .py-4{
     position: relative;
 }
