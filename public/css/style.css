@@ -288,6 +288,10 @@ footer{
 footer a{
     font-style: italic;
 }
+footer a:hover{
+    text-decoration: none;
+    color:yellow;
+}
 .bottom_nav ul a li{
     list-style: none;
     padding:9px ;

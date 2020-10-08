@@ -10,54 +10,59 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Simple Table</h4>
+                <h4 class="card-title"> Registerd Users </h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        Full Name
                       </th>
                       <th>
-                        Country
+                        email
                       </th>
                       <th>
-                        City
+                        phone
                       </th>
-                      <th class="text-right">
-                        Salary
+                      <th >
+                        city
+                      </th>
+                      <th >
+                        address
+                      </th>
+                      <th >
+                        state
                       </th>
                     </thead>
                     <tbody>
+
+                    @foreach ($udata as $user)
                       <tr>
                         <td>
-                          Dakota Rice
+                          {{ $user->name }}
+                          {{ $user->lname }}
                         </td>
                         <td>
-                          Niger
+                          {{ $user->email }}
                         </td>
                         <td>
-                          Oud-Turnhout
+                        {{ $user->phone }}
                         </td>
-                        <td class="text-right">
-                          $36,738
+                        <td >
+                        {{ $user->city }},
+                        {{ $user->district }}
+                        </td>
+                        <td >
+                        {{ $user->address1 }},
+                        {{ $user->address2 }}
+                        </td>
+                        <td>
+                        {{ $user->state }}
                         </td>
                       </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Curaçao
-                        </td>
-                        <td>
-                          Sinaai-Waas
-                        </td>
-                        <td class="text-right">
-                          $23,789
-                        </td>
-                      </tr>
+
+                    @endforeach
                     </tbody>
                   </table>
                 </div>

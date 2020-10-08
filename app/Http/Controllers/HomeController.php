@@ -40,6 +40,7 @@ class HomeController extends Controller
 
         $user = User::findOrFail($user_id);
 
+        $user->name = $request->input('email');
         $user->name = $request->input('name');
         $user->lname = $request->input('lname');
         $user->address1 = $request->input('address1');

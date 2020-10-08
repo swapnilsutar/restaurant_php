@@ -8,9 +8,13 @@ Route::get('/', function () {
 
 Route::group(['middleware'=> ['admin']],function(){
 
-    Route::get('/admin', function () {
-        return view('admin.dashboard');
-    });
+    // Route::get('/admin', function () {
+    //     return view('admin.dashboard','AdminController@userAccess');
+    // });
+
+    Route::get('/admin','AdminController@userAccess');
+
+
 
 });
 
@@ -28,6 +32,7 @@ Route::view('/contact','contact');
 Route::view('/reservation','reservation');
 
 Route::get('/food_menu','menuController@index');
+
 
 // Route::get('/profile','profileController@index');
 

@@ -127,7 +127,7 @@
                 <div class="form-group">
                     <label class="p_name"> Phone</label>
                     
-                    <input type="text" name="phone" value="{{ Auth::user()->phone }}" class="form-control">
+                    <input type="text" name="phone" value="{{ Auth::user()->phone }}" class="form-control" pattern="[789][0-9]{9}" required>
 
                    
 
