@@ -4,7 +4,7 @@ body{
     background-attachment: fixed;
 }
 
-.card{
+.card1{
     background-color: rgba(182, 182, 182, 0.411);
 }
 .py-4 {
@@ -164,8 +164,16 @@ body{
 .p_name{
     font-weight: 700;
     font-size: 18px;
+    padding:5px;
 }
 .p_ans{
     font-weight: 500;
     font-size: 19px;
+}
+.ff1{
+    background-color: rgba(9, 63, 7, 0.534);
+    padding:20px;
+}
+.modal{
+    z-index: 199999;
 }

@@ -20,6 +20,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'HomeController@index1')->name('profile');
 
+
+Route::post('/profile', 'HomeController@profileupdate');
+
 Route::view('/menu','menu');
 Route::view('/contact','contact');
 Route::view('/reservation','reservation');
