@@ -13,4 +13,5 @@ class AdminA extends Model
         
         return $u;
     }
+    
 }

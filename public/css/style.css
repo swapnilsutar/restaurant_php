@@ -321,3 +321,21 @@ footer a:hover{
 .py-4{
     position: relative;
 }
+.card-session{
+    position: absolute;
+    top: 90px;
+    right: 30px;
+}
+.alert-danger{
+    color: white;
+    background-color: rgb(226, 37, 37);
+    border:none;
+}
+.thankyou{
+    height: 65vh;
+}
+.tk h1{
+    text-align: center;
+    font-weight:900 ;
+    padding-top: 100px;
+}

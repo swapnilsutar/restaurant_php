@@ -52,6 +52,7 @@
                         @else
                         <a href="{{ route('login') }}" class="nav-link">Login</a>
                     </span>                
+                   
                     @if (Route::has('register'))
                     <span class="navbar-text">
                         <a href="{{ route('register') }}" class="nav-link">Register</a>      
@@ -69,6 +70,11 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             
                         <a href="{{ route('profile') }}" class="dropdown-item"> {{ __('Profile') }} </a>
+                        <a href="{{ url('dashboard') }}" class="dropdown-item"> {{ __('Admin') }} </a>
+                                   
+                     
+                     
+                        
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();

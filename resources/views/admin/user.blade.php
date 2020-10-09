@@ -1,21 +1,34 @@
 @extends('layout.master')
 
 @section('title')
-    Dashboard
+    User Profile
 @endsection
 
 @section('content')
 
-        <div class="row">
+<div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title"> Registerd Users </h4>
               </div>
+
+              <div class="card-session">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+              </div>
+
+
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
+                        <th>
+                        id
+                        </th>
                       <th>
                         Full Name
                       </th>
@@ -24,6 +37,9 @@
                       </th>
                       <th>
                         phone
+                      </th>
+                      <th>
+                      Role
                       </th>
                       <th >
                         city
@@ -39,6 +55,9 @@
 
                     @foreach ($udata as $user)
                       <tr>
+                      <td>
+                        {{ $user -> id}}
+                      </td>
                         <td>
                           {{ $user->name }}
                           {{ $user->lname }}
@@ -47,7 +66,10 @@
                           {{ $user->email }}
                         </td>
                         <td>
-                        {{ $user->phone }}
+                          {{ $user->phone }}
+                        </td>
+                        <td>
+                        {{ $user->userType }}
                         </td>
                         <td >
                         {{ $user->city }},
@@ -60,6 +82,10 @@
                         <td>
                         {{ $user->state }}
                         </td>
+                        <td>
+                            <a href="/register_edit/{{ $user -> id }}" class="btn btn-warning">edit</a>
+                        </td>
+
                       </tr>
 
                     @endforeach
@@ -70,5 +96,5 @@
             </div>
           </div>
         </div>
-      
-@stop
+
+@endsection

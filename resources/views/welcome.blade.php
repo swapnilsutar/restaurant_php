@@ -13,7 +13,6 @@
         
     </head>
     <body>
-        
 
         
         <div class="container-fluid">
@@ -63,7 +62,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
     
                                  <a href="{{ route('profile') }}" class="dropdown-item"> {{ __('Profile') }} </a>
-                                    
+                                 <a href="{{ url('dashboard') }}" class="dropdown-item"> {{ __('Admin') }} </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -79,6 +78,18 @@
                 </div>
             </nav>
 
+
+        </div>
+       
+         <div class="card-session">
+                    @if (session('status'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    <div class="alert alert-success" role="alert">
+                    {{ __('You are logged in!') }}
+                    </div>
+                    @endif
 
         </div>
         

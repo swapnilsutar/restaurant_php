@@ -17,7 +17,7 @@ class AdminMiddleware
     public function handle($request, Closure $next)
     {
         if(Auth::user()->userType !== 'admin'){
-            return redirect()->route('home')->with('status','Write here your messege');
+            return redirect('/')->with('status','You dont have Admin Access');
         }
         else{
             return $next($request);

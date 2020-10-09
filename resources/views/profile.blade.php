@@ -2,23 +2,13 @@
 
 @section('content')
 
-                @if (session('status'))
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <div class="modal-header bg-success">
-                                <h5 class="modal-title" id="exampleModalLabel">Success</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body bg-success">
-                                        {{ session('status') }}
-                                </div>
-                            </div>
+        <div class="card-session">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
                         </div>
-                    </div>                               
-                @endif
+                    @endif
+        </div>
 
 <div class="container">
 
@@ -145,7 +135,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                         <br><br>
-                        <input type="submit" class="btn btn-success btn-block" data-toggle="modal" data-target="#exampleModal" value="Update Profile">
+                        <input type="submit" class="btn btn-success btn-block" value="Update Profile">
                     </div>
                 </div>
                 

@@ -22,36 +22,33 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="green">
+    <div class="sidebar" data-color="red">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
-        </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="/" class="simple-text logo-normal">
+          I F R
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html">
+            <a href="dashboard">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
-            <a href="./icons.html">
+            <a href="userprofile">
               <i class="now-ui-icons education_atom"></i>
-              <p>Icons</p>
+              <p>Users Profile</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
+            <a href="menuall">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
+              <p>Menu</p>
             </a>
           </li>
           <li>
@@ -66,7 +63,7 @@
               <p>User Profile</p>
             </a>
           </li>
-          <li class="active ">
+          <li >
             <a href="./tables.html">
               <i class="now-ui-icons design_bullet-list-67"></i>
               <p>Table List</p>
@@ -78,12 +75,7 @@
               <p>Typography</p>
             </a>
           </li>
-          <li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -100,7 +92,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Table List</a>
+            <a class="navbar-brand" href="/dashboard">Indian Food Restaurant</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -155,6 +147,17 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('profile') }}"
+                                      >
+                                        {{ __('profile') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ url('/admin/dashboard') }}"
+                                      >
+                                        {{ __('Admin') }}
+                                    </a>
+                                  
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -183,34 +186,17 @@
 
       <footer class="footer">
         <div class=" container-fluid ">
-          <nav>
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="http://presentation.creative-tim.com">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
+
           <div class="copyright" id="copyright">
             &copy; <script>
               document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-            </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </script>, Designed by <a href="/" target="_blank">Invision</a>. Coded by <a href="/" target="_blank">Swapnil Sutar </a>.
           </div>
         </div>
       </footer>
     </div>
   </div>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>

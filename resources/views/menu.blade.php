@@ -16,7 +16,7 @@
                 </div>
                 <center>
 
-                <a href="/food_menu">
+                <a href="/allfood">
                     <button class='follow_me_btn'>
                         click here
                     </button>
@@ -31,7 +31,7 @@
                 </div>
                 <center>
 
-                <a href="/food_menu">
+                <a href="/allfood">
                     <button class='follow_me_btn'>
                         click here
                     </button>
@@ -44,7 +44,7 @@
                    dessert
                 </div>
                 <center>
-                <a href="/food_menu">
+                <a href="/allfood">
                     <button class='follow_me_btn'>
                         click here
                     </button>

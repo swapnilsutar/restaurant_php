@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('welcome');
     }
 
     public function index1()
@@ -33,6 +33,9 @@ class HomeController extends Controller
         return view('profile');
     }
 
+    public function allfun(){
+        return view('allfood');
+    }
     public function profileupdate(Request $request){
 
         // return view('my-profile-update');
@@ -60,8 +63,8 @@ class HomeController extends Controller
         //     return view("/");
         // }
             $user->update();
-        return redirect('/profile')->with('status','Yout profile is succesfully Updated');  
 
+        return redirect('/profile')->with('status','Your profile is succesfully Updated');  
 
     }
 
