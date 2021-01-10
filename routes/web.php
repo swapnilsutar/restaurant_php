@@ -23,7 +23,7 @@ Route::group(['middleware'=> ['admin']],function(){
 
 Auth::routes();
 
-Route::get('/home   ', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'HomeController@index1')->name('profile');
 

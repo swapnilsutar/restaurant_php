@@ -1,16 +1,14 @@
 <?php
 
 namespace App;
-
 use DB;
 use Illuminate\Database\Eloquent\Model;
 
-
-class foodmenu extends Model
+class Foodmenu extends Model
 {
-        public static function getmenuData(){
+    public static function getmenuData(){
 
-            $v = DB::table('food_menu')->get();
-            return $v;
-        }    
-}   
+        $v = DB::table('foodmenus')->get();
+        return $v;
+    }   
+}
