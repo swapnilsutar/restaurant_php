@@ -21,8 +21,8 @@
                 <div class="form-group">
                         <label for="">Give ROle</label>
                     <select name="userType" id="" class="form-control">
-                        <option value="admin" class="form-control">Admin</option>
                         <option value="vendor" class="form-control">vendor</option>
+                        <option value="admin" class="form-control">Admin</option>
                     </select>
                 </div>
             </div>
